@@ -1,0 +1,10 @@
+langchain
+bs4
+chromadb
+openai
+tiktoken
+sentence_transformers
+unstructured
+tabulate
+pdf2image
+faiss-cpu
