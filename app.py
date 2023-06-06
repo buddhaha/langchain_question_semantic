@@ -7,7 +7,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 import os
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = <api_key>
 
 # load text data from website
 urls = ['https://www.praha6.cz/potrebuji-vyresit/vydani-nebo-vymena-obcanskeho-prukazu-1700-001_8520.html',
