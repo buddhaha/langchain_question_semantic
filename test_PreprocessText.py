@@ -31,16 +31,13 @@ sample_text = docs[0]['text']
 
 # example of the embeddings
 embed = prec.get_embeddings(sample_text) #.cpu().detach().numpy()
-print(embed)
-print(type(embed))
-print(embed.shape)
 
 
 question = "Jake jsou poplatky za psa?"
 question_embedding = prec.get_embeddings([question]).cpu().detach().numpy()
-question_embedding.shape
+#question_embedding.shape
 
-#
+# @TODO: search in docs object with embeddings to get nearest vectors to question
 scores, samples = embeddings_dataset.get_nearest_examples(
     "embeddings", question_embedding, k=5
 )
